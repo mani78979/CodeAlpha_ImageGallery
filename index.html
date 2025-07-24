@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Gallery | CodeAlpha</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="title">My Image Gallery</h1>
+
+    <div class="filters">
+      <button class="filter-btn" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="nature">Nature</button>
+      <button class="filter-btn" data-filter="city">City</button>
+      <button class="filter-btn" data-filter="animals">Animals</button>
+    </div>
+
+    <div class="gallery">
+      <div class="image-box nature" data-caption="Nature - Lake View">
+        <img src="https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Gallery Image 1" />
+      </div>
+      <div class="image-box city" data-caption="City Lights">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1zwhySGCEBxRRFYIcQgvOLOpRGqrT3d7Qng&s" alt="Gallery Image 2" />
+      </div>
+      <div class="image-box animals" data-caption="Wildlife - Deer">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl37Ha8cXj2c-sdAN1bfoPl31dXDgypc55Kw&s" alt="Gallery Image 3" />
+      </div>
+      <div class="image-box nature" data-caption="Eye Artwork">
+        <img src="https://media.istockphoto.com/id/814423752/photo/eye-of-model-with-colorful-art-make-up-close-up.jpg?s=612x612&w=0&k=20&c=l15OdMWjgCKycMMShP8UK94ELVlEGvt7GmB_esHWPYE=" alt="Gallery Image 4" />
+      </div>
+      <div class="image-box city" data-caption="Urban Street View">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQykzoZeCE0p7LeuyHnLYCdPP2jju9d5PaMeA&s" alt="Gallery Image 5" />
+      </div>
+      <div class="image-box animals" data-caption="Big Cat Close-up">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9YYh5Fk1u9VsWWr1MhkyQeOzeNbtnnMO96g&s" alt="Gallery Image 6" />
+      </div>
+      <div class="image-box nature" data-caption="Foggy River">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJrT7MI9fsrc6mWRBJBwhrf4vwTL7S5B8CzQ&s" alt="Gallery Image 7" />
+      </div>
+      <div class="image-box city" data-caption="Overhead Cityscape">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUsbmTZu_uMrmJ0z--CrG-o1UIXytu1OCizQ&s" alt="Gallery Image 8" />
+      </div>
+      <div class="image-box animals" data-caption="Deer in Woods">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTztUiWuq9GV17icO7eylHnTx_dGCOz52d0gA&s" alt="Gallery Image 9" />
+      </div>
+      <div class="image-box nature" data-caption="Rainy Street">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1AKF7LelsXtbK8YAYYdiPrDMZdFd74ZTgkQ&s" alt="Gallery Image 10" />
+      </div>
+    </div>
+
+    <div id="lightbox" class="lightbox">
+      <span class="close">&times;</span>
+      <img class="lightbox-content" id="lightbox-img" />
+      <p id="caption" class="caption-text"></p>
+      <div class="lightbox-nav">
+        <span class="prev">&#10094;</span>
+        <span class="next">&#10095;</span>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
